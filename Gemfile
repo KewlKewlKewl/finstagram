@@ -12,8 +12,15 @@ gem 'sinatra-activerecord'
 gem 'puma'
 gem 'tux'
 
+gem 'pry'
+
 group :development, :test do
-  gem 'pry'
   gem 'shotgun'
   gem 'sqlite3', '~> 1.3.6'
+end
+
+# new line added that did not exist before deployment
+group :production do 
+  gem 'rails_12factor'
+  gem 'pg', '~> 0.20'
 end

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content='Finnstagram Project for beginner programmers supported by Lighthouse Labs. Languages used for porject are HTML, CSS, Ruby and Javascript.'>
+        <meta name="author" content='Aman Hundal'>
+        <link rel="stylesheet" href="/stylesheets/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/lib.css">
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        <title>Finstagram Project</title> 
+    </head>
+    <body>
+        <header>
+            <h1> 
+                <a class="header-color" href="/">Finstagram</a>
+            </h1>
+            <div class="login-info">
+                <% if current_user %>
+                    <%= current_user.username %>
+                    <a href="/logout" class="login-font">| Logout</a>
+                <% else %>
+                    <a href="/login" class="login-font">Login</a>
+                    <a href="/signup" class="login-font">| Join</a>
+                <% end %>
+            </div>
+        </header>
+        <main role="main">
+            <%= yield %>
+        </main>
+    </body>
+</html>

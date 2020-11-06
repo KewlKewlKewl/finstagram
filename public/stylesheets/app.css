@@ -1,0 +1,42 @@
+header {
+  background-color: lightseagreen;
+  color: white;
+}
+body {
+    background-color: lightgrey;
+}
+main {
+    background-color: whitesmoke;
+    padding: 16px;
+}
+.finstagram-post {
+    margin-bottom: 48px;
+}
+.finstagram-post .user-info img {
+    border-radius: 35%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+}
+a.photo {
+    transition: padding .5s;
+}
+a.photo:hover {
+    padding: 0px;
+}
+.user-img {
+    transition: transform 1s;
+}
+.user-img:hover {
+    transform: scale(2.75);
+}
+.login-font {
+    color:white;
+}
+.header-color {
+    color: white;
+}
+.name-user {
+    color: #244751;
+}

@@ -1,0 +1,15 @@
+<h2> Post Something New! </h2>
+<ul class="errors">
+    <% @finstagram_post.errors.full_messages.each do |errormessage| %>
+        <li><%= errormessage %></li>
+    <% end %>
+</ul>
+<form method="POST" action="/finstagram_posts">
+    <div class="form-group">
+        <label for="photo_url">New Post URL</label>
+        <input type="text" name="photo_url" id="photo_url">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="button">Post</button>
+    </div>
+</form>
